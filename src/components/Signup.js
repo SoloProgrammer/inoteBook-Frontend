@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link,useNavigate } from 'react-router-dom'
+import { server } from '../configs/server';
 
 function Signup(props) {
 
@@ -11,7 +12,7 @@ function Signup(props) {
 
     })
     let navigate = useNavigate();
-    const host = "http://localhost:5000"
+    const host = server.URL.production
     const Onchange = (e) => {
         setCredentails({ ...credentials, [e.target.name]: e.target.value })
     }

@@ -11,9 +11,8 @@ function Alert(props) {
         word = "Note"
     }
     if(word === "warning"){
-        word = "Done Updation"
+        word = "Please wait..!"
     }
-
     let new_word = word.charAt(0).toUpperCase()  + word.slice(1);
 
     return new_word;

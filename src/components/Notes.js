@@ -4,7 +4,6 @@ import noteContext from '../context/notes/noteContext'
 import Form from './Form'
 
 
-
 function Notes(props) {
     const context = useContext(noteContext)
     const {userdetail, notes, Deletenote, getallnotes, Getuser } = context

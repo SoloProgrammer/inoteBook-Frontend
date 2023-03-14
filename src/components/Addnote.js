@@ -12,7 +12,7 @@ function Addnote(props) {
     }
   return (
     <div className="container" style={{"marginTop":"2.3em"}} >
-      <h2> <i className="fa-solid fa-note-sticky"></i> Add a new Note</h2>
+      <h2> <span> <img style={{width:'2.3rem',margin:"0 0 .3rem"}} src="https://cdn-icons-png.flaticon.com/512/8140/8140240.png" alt="" /> </span> Add a new Note</h2>
 
         <Form show_Alert={props.show_Alert}  notedetail={notedetail} curdFunc = {"addnote"} submit_txt = {"Add note"}/>
         
